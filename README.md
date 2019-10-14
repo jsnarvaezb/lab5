@@ -8,6 +8,7 @@ Desplegar los contenedores de sa-api y sa-auth
 ### Instalación
 
   npm install
+  
   npm install --save axios vue-axios
   
 ### Ejecución
