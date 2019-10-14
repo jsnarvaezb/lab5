@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">CRUD</div>
+                    <div class="card-header"></div>
 
                     <div class="card-body">
                         <form @submit="formSubmit">
@@ -24,6 +24,7 @@
                         </form>
 
                         <pre>
+                        {{opc}}
                         {{output}}
                         </pre>
                     </div>
@@ -41,13 +42,12 @@
             console.log('Component mounted.')
         },
         data() {
-            return {
-              name: '',
+            return {name: '',
               lastName: '',
               user: '',
               pass: '',
-              output: ''
-            }
+              opc: '',
+              output: ''}
         },
 
         methods: {
@@ -60,15 +60,17 @@
                   username: this.user,
                   password: this.pass
                 }
-                
+
                 this.axios.post('http://localhost:4000/sa-auth-ms/resources/users', data
 
 
                 )
                 .then(function (response) {
+                    currentObj.opc = "Usuario creado satisfactoriamente desde Microservicio:"
                     currentObj.output = response.data;
                 })
                 .catch(function (error) {
+                    currentObj.opc = "ERROR"
                     currentObj.output = error;
                 });
             }
