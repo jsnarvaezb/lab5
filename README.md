@@ -7,8 +7,9 @@ Desplegar los contenedores de sa-api y sa-auth
 
 ### Instalación
 
-npm install
-npm run dev
+  npm install
+
+  npm run dev
 
 
 ### Run Chrome browser without CORS
