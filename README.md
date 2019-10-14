@@ -8,6 +8,8 @@ Desplegar los contenedores de sa-api y sa-auth
 ### Instalación
 
   npm install
+  
+### Ejecución
 
   npm run dev
 
