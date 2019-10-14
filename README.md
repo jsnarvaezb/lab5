@@ -1,10 +1,20 @@
 # lab5
 Laboratorio Arquitectura
 
+# Prerequisitos
+
+Desplegar los contenedores de sa-api y sa-auth
+
+# Instalación
+
+npm install
+npm run dev
+
+
 # Run Chrome browser without CORS
 
-## OSX
+### OSX
 sudo google-chrome --disable-web-security --user-data-dir="/" --no-sandbox
 
-## LINUX
+### LINUX
 google-chrome --disable-web-security
