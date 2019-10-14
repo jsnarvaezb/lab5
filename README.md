@@ -1,10 +1,10 @@
 # lab5
 Laboratorio Arquitectura
 
-#Run Chrome browser without CORS
+# Run Chrome browser without CORS
 
-##OSX
+## OSX
 sudo google-chrome --disable-web-security --user-data-dir="/" --no-sandbox
 
-##LINUX
+## LINUX
 google-chrome --disable-web-security
