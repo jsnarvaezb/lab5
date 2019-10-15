@@ -1,0 +1,10 @@
+mutation {
+  createUser(user: {
+    firstName: "Jeisson"
+    lastName: "Vergara"
+    username: "javergarav"
+    password: "123"
+  }) {
+    username
+  }
+}
